@@ -24,7 +24,7 @@ export class EstudianteService {
   }
 
   remove(id: number) {
-    this.estudiantes = this.estudiantes.filter((obj)=>{(obj.id !== id)})
+    this.estudiantes = this.estudiantes.filter((obj)=> {return obj.id != id })
     return this.estudiantes;
   }
 }
